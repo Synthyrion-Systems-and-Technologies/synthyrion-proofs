@@ -4,7 +4,7 @@ Proofs, results and checker outputs behind the Synthyrion Core L5 kernel, from S
 
 > **Status, plainly.** Synthyrion Core L5 is under active development. It has **no safety, security or government certification**, **no whole-kernel functional-correctness proof**, and is **not FIPS 140-3 validated**. Everything here is *tested*, *bounded* or *panic-free* evidence, labelled as such. A bounded result is a proof about its finite domain only. Nothing in this repository is a proof that the kernel is correct.
 
-It accompanies two reports by Matthew Gelfman and Melissa Gelfman: the architecture and security report, and the methods report (*How the Synthyrion kernel is proven and finished*). The architecture and security report is at https://doi.org/10.5281/zenodo.24581739 and the methods report at https://doi.org/10.5281/zenodo.24581779. Read the methods report first: it explains what each file below means and what it does not show.
+It accompanies two reports by Matthew Gelfman and Melissa Behrends-Gelfman: the architecture and security report, and the methods report (*How the Synthyrion kernel is proven and finished*). The architecture and security report is at https://doi.org/10.5281/zenodo.24581739 and the methods report at https://doi.org/10.5281/zenodo.24581779. Read the methods report first: it explains what each file below means and what it does not show.
 
 ## What is here
 
