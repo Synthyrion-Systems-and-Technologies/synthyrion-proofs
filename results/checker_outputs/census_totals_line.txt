@@ -1,0 +1,2 @@
+TOTALS line of the committed census (line 7704 of the census file at the measured commit):
+TOTALS: functions=5659 proven=5101 proven-induction=426 blocked=105 covered=0 not-dep-free=27

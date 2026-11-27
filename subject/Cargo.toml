@@ -1,0 +1,21 @@
+[package]
+name = "synthyrion_verify_subject"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.81"
+license = "MPL-2.0"
+description = "A small, dependency-free access-control domain -- badges, roles, clearances, wings, revocation -- published so that synthyrion_verify's test suite can demonstrate the thing that matters about a proof engine: proving ANOTHER crate's invariants, over the whole of a finite domain, in code that knows nothing about the engine. Not a verification tool; the SUBJECT of one. no_std, no alloc, no unsafe, no dependencies."
+repository = "https://github.com/Synthyrion-Systems-and-Technologies/synthyrion-proofs"
+readme = "README.md"
+keywords = ["access-control", "no-std", "verification", "testing", "example"]
+categories = ["no-std", "development-tools::testing"]
+
+# Deliberately none, ever. This crate is the subject of proofs published in `synthyrion_verify`; if it
+# depended on anything, a proof about it would be a proof about that thing too. In particular it does
+# NOT depend on `synthyrion_verify` -- the arrow runs the other way, and only the other way.
+[dependencies]
+
+# The version is 1.0.0 rather than 0.1.0 because the API is frozen BY CONSTRUCTION: `Clearance::ALL`
+# and `Wing::ALL` are the denominators quoted in synthyrion_verify's published proofs, so changing them
+# would silently change what those proofs mean. Additive 1.x releases are fine; a breaking change to
+# a proof subject is a 2.0.

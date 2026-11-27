@@ -1,0 +1,595 @@
+callee	cost_mir_statements_or_derived_reference	labelled_twin_verified
+core::num::saturating_add	24	yes
+[synthyrion_sched_rt] <[(u64, u64); 8] as Index<RangeTo<usize>>>::index	47	yes
+[synthyrion_sched_rt] core::slice::iter	27	yes
+[synthyrion_sched_rt] <core::slice::Iter<'_, (u64, u64)> as Iterator>::enumerate	12	yes
+[synthyrion_sched_rt] <Enumerate<core::slice::Iter<'_, (u64, u64)>> as IntoIterator>::into_iter	12	yes
+[synthyrion_sched_rt] <Enumerate<core::slice::Iter<'_, (u64, u64)>> as Iterator>::next	54	yes
+[synthyrion_sched_rt] <&[(u64, u64)] as IntoIterator>::into_iter	31	yes
+[synthyrion_sched_rt] <core::slice::Iter<'_, (u64, u64)> as Iterator>::next	27	yes
+[synthyrion_sched_rt] <Option<Refills> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+[synthyrion_sched_rt] <Option<u64> as Try>::branch	12	yes
+[synthyrion_sched_rt] core::num::checked_add	16	yes
+[microkernel] Refills::from_parts	@synthyrion_sched_rt::sporadic::Refills::from_parts	no
+[microkernel] Refills::entries	@synthyrion_sched_rt::sporadic::Refills::entries	no
+[microkernel] Refills::available	@synthyrion_sched_rt::sporadic::Refills::available	no
+core::num::saturating_sub	24	yes
+<Result<(), ListFull> as FromResidual<Result<Infallible, ListFull>>>::from_residual	16	yes
+<Result<IdList<CAP>, ListFull> as FromResidual<Result<Infallible, ListFull>>>::from_residual	16	yes
+<Result<(), ListFull> as Try>::branch	16	yes
+core::slice::iter	27	yes
+<Result<(u64, u64, PageSize), objects::MapError> as FromResidual<Result<Infallible, objects::MapError>>>::from_residual	20	yes
+<Option<SlotView> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+core::num::saturating_mul	32	yes
+<u64 as Ord>::max	21	yes
+<u64 as Ord>::min	21	yes
+<u64 as From<u8>>::from	8	yes
+Option::is_some	8	yes
+Option::is_none	8	yes
+Option::as_ref	8	yes
+Option::as_mut	8	yes
+Option::take	8	yes
+Option::copied	8	yes
+Option::unwrap_or	8	yes
+Option::unwrap_or_default	8	yes
+Option::ok_or	8	yes
+Result::ok	12	yes
+Result::is_err	8	yes
+<Option<u64> as PartialEq>::eq	16	yes
+<synthyrion_caps::ObjKind as PartialEq>::eq	16	yes
+<synthyrion_caps::ObjKind as PartialEq>::ne	24	yes
+<Option<u64> as Try>::branch	8	yes
+<Option<u64> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+alloc::vec::Vec::len	8	yes
+alloc::vec::Vec::is_empty	8	yes
+alloc::vec::Vec::new	14	yes
+<alloc::vec::Vec<u64> as Deref>::deref	14	yes
+<alloc::vec::Vec<Option<u64>> as Deref>::deref	14	yes
+<alloc::vec::Vec<pure::Window> as Deref>::deref	14	yes
+alloc::collections::BTreeMap::len	8	yes
+alloc::collections::BTreeMap::new	8	yes
+BTreeSet::len	8	yes
+SealedCap::object	8	no
+SealedCap::kind	8	no
+SealedCap::allows	8	no
+synthyrion_caps::Rights::union	8	no
+NonZero::new	8	yes
+<u64 as Div<NonZero<u64>>>::div	8	yes
+<core::ops::Range<usize> as IntoIterator>::into_iter	8	yes
+<core::ops::Range<usize> as Iterator>::next	31	yes
+<core::ops::Range<u64> as IntoIterator>::into_iter	8	yes
+<core::ops::Range<u64> as Iterator>::next	34	yes
+[synthyrion_kcrypto] <[u8; 128] as IndexMut<RangeTo<usize>>>::index_mut	47	yes
+[synthyrion_kcrypto] <[u8; 64] as Index<RangeTo<usize>>>::index	47	yes
+[synthyrion_kcrypto] <[u8; 128] as Index<RangeTo<usize>>>::index	47	yes
+[synthyrion_kcrypto] <[u8; 128] as IndexMut<core::ops::Range<usize>>>::index_mut	39	yes
+[synthyrion_kcrypto] <[u8; 256] as Index<core::ops::Range<usize>>>::index	39	yes
+[synthyrion_kcrypto] <[u8; 256] as IndexMut<RangeTo<usize>>>::index_mut	47	yes
+[synthyrion_kcrypto] <[u8; 256] as IndexMut<core::ops::Range<usize>>>::index_mut	39	yes
+[synthyrion_kcrypto] <[u8; 64] as IndexMut<core::ops::Range<usize>>>::index_mut	39	yes
+[synthyrion_kcrypto] <[u8] as Index<RangeTo<usize>>>::index	47	yes
+[synthyrion_kcrypto] <[u8] as Index<core::ops::Range<usize>>>::index	39	yes
+[synthyrion_kcrypto] <[u8] as Index<core::ops::RangeFrom<usize>>>::index	23	yes
+[synthyrion_kcrypto] core::slice::copy_from_slice	48	yes
+[synthyrion_kcrypto] core::cmp::min	21	yes
+core::num::rotate_right	16	yes
+core::num::to_be_bytes	48	yes
+core::num::wrapping_add	4	yes
+core::num::wrapping_mul	4	yes
+core::num::to_le_bytes	48	yes
+[synthyrion_kcrypto] <Enumerate<core::slice::Iter<'_, u64>> as IntoIterator>::into_iter	12	yes
+[synthyrion_kcrypto] <core::slice::Iter<'_, u64> as Iterator>::enumerate	12	yes
+[synthyrion_kcrypto] core::slice::iter	27	yes
+[synthyrion_kcrypto] <Enumerate<core::slice::Iter<'_, u64>> as Iterator>::next	54	yes
+[synthyrion_capauth] Rights::contains	8	no
+[synthyrion_capauth] Rights::intersection	8	no
+[synthyrion_capauth] Rights::bits	4	no
+[synthyrion_capauth] <Rights as PartialEq>::eq	8	yes
+[synthyrion_capauth] <ObjKind as PartialEq>::eq	16	yes
+[synthyrion_capauth] <[u8; 32] as PartialEq>::eq	320	yes
+[synthyrion_capauth] <[u8; 21] as IndexMut<core::ops::Range<usize>>>::index_mut	39	yes
+[synthyrion_capauth] <[u8; 64] as Index<RangeTo<usize>>>::index	47	yes
+[synthyrion_capauth] core::slice::copy_from_slice	19	yes
+[synthyrion_capauth] hmac_sha512	assert_le(SEAL_MSG_LEN, 111) + @synthyrion_kcrypto::hmac_sha512	no
+[synthyrion_capauth] ct_eq_mac	@synthyrion_kcrypto::ct_eq_mac	no
+[synthyrion_btab] slice::get	15	yes
+[synthyrion_btab] slice::get_mut	15	yes
+[synthyrion_btab] slice::first	12	yes
+[synthyrion_btab] slice::swap	36	yes
+[synthyrion_btab] <Option<usize> as Try>::branch	12	yes
+[synthyrion_btab] <Option<(&K, &V)> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+[synthyrion_btab] <Option<V> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+[synthyrion_btab] core::num::checked_sub	12	yes
+[synthyrion_btab] core::num::saturating_sub	24	yes
+[synthyrion_btab] <usize as Ord>::min	21	yes
+[synthyrion_btab] Option::is_none	12	yes
+[synthyrion_btab] Option::is_some	12	yes
+[synthyrion_btab] Result::is_ok	12	yes
+[synthyrion_btab] Result::ok	12	yes
+[synthyrion_btab] Option::take	12	yes
+[synthyrion_btab] Option::replace	12	yes
+[synthyrion_btab] <K as Ord>::cmp	16	yes
+[synthyrion_btab] <K as PartialEq>::eq	8	yes
+[synthyrion_btab] <K as Clone>::clone	8	yes
+[synthyrion_btab] <F as FnMut<(&K, &mut V)>>::call_mut	32	no
+[synthyrion_btab] <Iter<'_, K, ()> as Iterator>::map	16	yes
+[microkernel] BTab::get	973	no
+[microkernel] BTab::insert	40925	no
+[microkernel] BTab::remove	45096	no
+[microkernel] BTab::retain	138247	no
+[synthyrion_ring] core::num::div_ceil	12	yes
+[synthyrion_ring] core::num::checked_add	16	yes
+[synthyrion_ring] core::num::checked_mul	24	yes
+[synthyrion_ring] core::num::wrapping_sub	12	yes
+[synthyrion_ring] core::num::wrapping_add	12	yes
+[synthyrion_ring] core::num::saturating_sub	24	yes
+[synthyrion_ring] core::num::saturating_add	24	yes
+[synthyrion_ring] slice::get	15	yes
+[synthyrion_ring] slice::get_mut	15	yes
+[synthyrion_ring] <u64 as Ord>::min	21	yes
+[synthyrion_ring] <Option<u64> as Try>::branch	12	yes
+[synthyrion_ring] <Option<u64> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+[synthyrion_kheal] core::slice::get	15	yes
+[synthyrion_kheal] core::slice::get_mut	15	yes
+[synthyrion_kheal] core::num::saturating_add	24	yes
+[synthyrion_kheal] core::num::saturating_sub	24	yes
+[synthyrion_kheal] <usize as Ord>::min	21	yes
+[synthyrion_kheal] Option::is_some	12	yes
+[synthyrion_kheal] Option::copied	12	yes
+[synthyrion_kheal] Option::unwrap_or	12	yes
+[synthyrion_kheal] Option::ok_or	12	yes
+[synthyrion_kheal] core::num::wrapping_mul	12	yes
+[synthyrion_kheal] core::num::wrapping_add	12	yes
+[synthyrion_kheal] core::num::rotate_left	16	yes
+[synthyrion_kheal] Vec::len	8	yes
+[synthyrion_kheal] Vec::is_empty	8	yes
+[synthyrion_kheal] <Vec<u64> as Deref>::deref	14	yes
+[synthyrion_kheal] <Result<&u64, Fault> as Try>::branch	12	yes
+[synthyrion_kheal] <Result<Heal, Fault> as Try>::branch	12	yes
+[synthyrion_kheal] <Result<u8, Fault> as FromResidual<Result<Infallible, Fault>>>::from_residual	12	yes
+[synthyrion_kheal] <Result<u64, Fault> as FromResidual<Result<Infallible, Fault>>>::from_residual	12	yes
+[synthyrion_kheal] <Heal as PartialEq>::ne	24	yes
+[synthyrion_kheal] <Vec<u32> as Deref>::deref	14	yes
+[synthyrion_kheal] <Vec<u64> as DerefMut>::deref_mut	14	yes
+[synthyrion_kheal] <Vec<u32> as DerefMut>::deref_mut	14	yes
+[synthyrion_kheal] <Result<u64, Fault> as Try>::branch	12	yes
+[synthyrion_kheal] <Result<(), Fault> as FromResidual<Result<Infallible, Fault>>>::from_residual	12	yes
+NonZero::get	8	yes
+[microkernel] CapAuthority::verify_at	@synthyrion_capauth::CapAuthority::verify_at	no
+[microkernel] CapAuthority::mint_at	@synthyrion_capauth::CapAuthority::mint_at	no
+[microkernel] core::slice::get	15	yes
+[microkernel] core::slice::get_mut	15	yes
+[microkernel] Option::copied	12	yes
+[microkernel] <Option<usize> as Try>::branch	8	yes
+[microkernel] <u32 as Ord>::max	21	yes
+[microkernel] <u32 as Ord>::min	21	yes
+[microkernel] SealedCap::object_epoch	8	no
+[microkernel] SealedCap::object	8	no
+[microkernel] <Option<u32> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+[microkernel] RefCell::try_borrow	40	yes
+[microkernel] RefCell::try_borrow_mut	34	yes
+[microkernel] RefCell::get_mut	8	yes
+[microkernel] Result::ok	12	yes
+[microkernel] <RefMut<'_, EpochTable> as DerefMut>::deref_mut	8	yes
+[microkernel] <Ref<'_, EpochTable> as Deref>::deref	8	yes
+[microkernel] <RefMut<'_, EpochTable> as Deref>::deref	8	yes
+[microkernel] <(u8, u64) as PartialOrd>::lt	32	yes
+[microkernel] <(u8, u64) as PartialOrd>::gt	32	yes
+core::slice::is_empty	8	yes
+core::slice::len	8	yes
+[microkernel] Cell::get	8	yes
+[microkernel] Cell::set	12	yes
+[microkernel] Cell::replace	8	yes
+core::num::checked_add	16	yes
+[microkernel] <T as Rec>::children	8	no
+[microkernel] <T as Rec>::scalars	24	no
+[microkernel] GuardedVec::len	8	no
+[microkernel] GuardedVec::raw	@synthyrion_kheal::GuardedVec::raw	no
+[microkernel] GuardedArr::len	@synthyrion_kheal::GuardedArr::len	no
+[microkernel] GuardedArr::raw	@synthyrion_kheal::GuardedArr::raw	no
+[microkernel] Guarded::set	@synthyrion_kheal::Guarded::set	no
+<Option<u64> as PartialEq>::ne	24	yes
+[microkernel] Guarded::raw	@synthyrion_kheal::Guarded::raw	no
+<Option<bool> as Try>::branch	8	yes
+<Option<GMut<'_, T>> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+<Option<&mut guardmap::Entry<T>> as Try>::branch	8	yes
+<u32 as TryFrom<u64>>::try_from	12	yes
+[microkernel] BTab::contains_key	973	no
+<Option<&u64> as Try>::branch	8	yes
+<Option<u32> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+<Option<u32> as Try>::branch	8	yes
+<Option<&guardmap::Entry<T>> as Try>::branch	8	yes
+<u64 as From<u32>>::from	8	yes
+<Option<&T> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+<Option<&mut tasktable::Task> as Try>::branch	8	yes
+<Option<ReplySlot> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+<Result<u64, objects::MapError> as Try>::branch	12	yes
+<Option<T> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+[microkernel] CapAuthority::revoke_all	@synthyrion_capauth::CapAuthority::revoke_all	no
+[synthyrion_capauth] EmbeddedMonitor::state	8	no
+[synthyrion_capauth] EmbeddedMonitor::observe	@synthyrion_rv::embed::EmbeddedMonitor::observe	no
+[microkernel] CapAuthority::note_revoked	@synthyrion_capauth::CapAuthority::note_revoked	no
+core::num::checked_mul	24	yes
+core::num::wrapping_sub	4	yes
+[microkernel] <dyn userwalk::PhysMem as userwalk::PhysMem>::read_u64	64	no
+[microkernel] <dyn userwalk::PhysMem as userwalk::PhysMem>::write	64	no
+<alloc::vec::Vec<(u64, u64)> as Deref>::deref	14	yes
+<alloc::vec::Vec<[u64; 5]> as Deref>::deref	14	yes
+<alloc::vec::Vec<(u64, u64)> as DerefMut>::deref_mut	14	yes
+<&alloc::vec::Vec<(u64, u64, u64)> as IntoIterator>::into_iter	36	yes
+<core::slice::Iter<'_, (u64, u64, u64)> as Iterator>::next	27	yes
+core::slice::iter_mut	24	yes
+<core::slice::IterMut<'_, u64> as Iterator>::enumerate	12	yes
+<Enumerate<core::slice::IterMut<'_, u64>> as IntoIterator>::into_iter	12	yes
+<Enumerate<core::slice::IterMut<'_, u64>> as Iterator>::next	54	yes
+core::num::checked_sub	12	yes
+Option::and_then Option<u64> {enc_task}>	24	no
+core::bool::then_some	8	yes
+Option::and_then Option<u64> {dec_task}>	24	no
+<Option<Option<u64>> as PartialEq>::ne	36	yes
+[microkernel] SealedCap::is_filler	@synthyrion_capauth::SealedCap::is_filler	no
+<Result<(), CapListFull> as Try>::branch	12	yes
+<Result<CapList, CapListFull> as FromResidual<Result<Infallible, CapListFull>>>::from_residual	12	yes
+core::num::abs_diff	8	yes
+<usize as From<u8>>::from	8	yes
+<u8 as TryFrom<usize>>::try_from	12	yes
+<usize as TryFrom<u64>>::try_from	8	yes
+<Option<&(u64, u64)> as Try>::branch	8	yes
+<Option<(u64, u64)> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+<Option<usize> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+<Option<usize> as Try>::branch	8	yes
+<Option<PairRec<0>> as Try>::branch	8	yes
+<Option<&u64> as PartialEq>::eq	20	yes
+<Option<PairRec<1>> as Try>::branch	8	yes
+[microkernel] check_word	@synthyrion_kheal::check_word	no
+[microkernel] <M as HdrMem>::note_fault	max(@microkernel::objhdr::<ObjRam as HdrMem>::note_fault, @microkernel::taskframe::<WordsAsHdr as HdrMem>::note_fault)	no
+[microkernel] <Option<EptRec> as Try>::branch	12	yes
+[microkernel] <Option<ept_tables::Tree> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+[synthyrion_ring] <M as RingMem>::write	max(@microkernel::ring::<MemRef as RingMem>::write, @microkernel::ring::<Direct as RingMem>::write)	no
+[synthyrion_ring] <M as RingMem>::read	max(@microkernel::ring::<MemRef as RingMem>::read, @microkernel::ring::<Direct as RingMem>::read)	no
+[synthyrion_ring] <S as Server>::serve	@microkernel::ring::<Serving as Server>::serve	no
+[synthyrion_ring] <S as Server>::ringable	@microkernel::ring::<Serving as Server>::ringable	no
+[microkernel] <dyn gate::UserMem as gate::UserMem>::write	max(@microkernel::userwalk::<UserSpace<M> as UserMem>::write, @synthyrion_gatecases::<NoMem as UserMem>::write, @boot_uefi::<DomWindow as UserMem>::write, @boot_uefi::<NoUserMem as UserMem>::write)	no
+[microkernel] <dyn gate::UserMem as gate::UserMem>::read	max(@microkernel::userwalk::<UserSpace<M> as UserMem>::read, @synthyrion_gatecases::<NoMem as UserMem>::read, @boot_uefi::<DomWindow as UserMem>::read, @boot_uefi::<NoUserMem as UserMem>::read)	no
+[microkernel] <M as userwalk::PhysMem>::read_u64	32 + 20 * MAX_MEM_REGIONS	no
+[microkernel] <M as userwalk::PhysMem>::read	64 + 20 * MAX_MEM_REGIONS + 12 * 4096	no
+[microkernel] <M as userwalk::PhysMem>::write	64 + 20 * MAX_MEM_REGIONS + 12 * 4096	no
+<Result<(), vcpu::HvError> as FromResidual<Result<Infallible, vcpu::HvError>>>::from_residual	20	yes
+<Result<ept_tables::Tree, vcpu::HvError> as Try>::branch	20	yes
+<Result<u64, vcpu::HvError> as Try>::branch	12	yes
+<Option<&tasktable::Task> as Try>::branch	8	yes
+[microkernel] Refills::charge	@synthyrion_sched_rt::sporadic::Refills::charge	no
+[microkernel] Guarded::word_ok	@synthyrion_kheal::Guarded::word_ok	no
+[synthyrion_sched_rt] <[(u64, u64); 8] as IndexMut<RangeTo<usize>>>::index_mut	47	yes
+[synthyrion_sched_rt] core::slice::last_mut	12	yes
+[microkernel] <&[(u64, usize, usize)] as IntoIterator>::into_iter	31	yes
+[microkernel] <core::slice::Iter<'_, (u64, usize, usize)> as Iterator>::next	27	yes
+[microkernel] <[(u64, usize, usize); 257] as Index<RangeTo<usize>>>::index	47	yes
+[microkernel] <[u8] as Index<core::ops::Range<usize>>>::index	39	yes
+[microkernel] <[u8] as IndexMut<core::ops::Range<usize>>>::index_mut	39	yes
+[microkernel] <usize as Ord>::min	21	yes
+[microkernel] <Enumerate<core::slice::Iter<'_, u64>> as IntoIterator>::into_iter	12	yes
+[microkernel] <core::slice::Iter<'_, u64> as Iterator>::enumerate	12	yes
+[microkernel] <Enumerate<core::slice::Iter<'_, u64>> as Iterator>::next	54	yes
+[microkernel] <RefMut<'_, &mut dyn gate::UserMem> as DerefMut>::deref_mut	8	yes
+[microkernel] <Ref<'_, &mut dyn gate::UserMem> as Deref>::deref	8	yes
+[microkernel] <impl FnMut(u64, usize, usize) as FnMut<(u64, usize, usize)>>::call_mut	max(@microkernel::userwalk::read::{closure#0}, @microkernel::userwalk::write::{closure#0})	no
+[microkernel] <&u64 as Mul<u64>>::mul	16	yes
+PageSize::bytes	16	no
+<Option<R> as FromResidual<Option<Infallible>>>::from_residual	12	no
+<Option<(R, chainstore::Links)> as FromResidual<Option<Infallible>>>::from_residual	16	no
+<Option<ChainMut<'_, R, CAP, D, B>> as FromResidual<Option<Infallible>>>::from_residual	16	no
+<Option<[u64; D]> as Try>::branch	20	no
+<Option<ChainMut<'_, Sc, 64, 32, 51>> as Try>::branch	12	no
+<ChainMut<'_, Sc, 64, 32, 51> as DerefMut>::deref_mut	@microkernel::chainstore::<ChainMut<'_, R, CAP, D, B> as DerefMut>::deref_mut	no
+[microkernel] <R as ChainRec>::word	max(@microkernel::scstore::<Sc as ChainRec>::word, @microkernel::pairrec::<PairRec as ChainRec>::word)	no
+core::num::count_ones	40	yes
+[microkernel] <R as ChainRec>::from_words	max(@microkernel::scstore::<Sc as ChainRec>::from_words, @microkernel::pairrec::<PairRec as ChainRec>::from_words)	no
+[microkernel] core::num::wrapping_mul	12	yes
+[microkernel] core::num::rotate_left	16	yes
+[microkernel] <R as ChainRec>::to_words	max(@microkernel::scstore::<Sc as ChainRec>::to_words, @microkernel::pairrec::<PairRec as ChainRec>::to_words)	no
+[microkernel] <Sc as FrameRec>::from_words	@microkernel::objguard::<Sc as FrameRec>::from_words	no
+[microkernel] <Sc as FrameRec>::to_words	@microkernel::objguard::<Sc as FrameRec>::to_words	no
+[microkernel] <M as TaskMem>::word	max(max(@microkernel::tasktable::<RamWords as TaskMem>::word, @microkernel::tasktable::<ReadOverlay as TaskMem>::word), @microkernel::tasktable::<RoRam as TaskMem>::word)	no
+[microkernel] <M as TaskMem>::set_word	max(max(@microkernel::tasktable::<RamWords as TaskMem>::set_word, @microkernel::tasktable::<ReadOverlay as TaskMem>::set_word), @microkernel::tasktable::<RoRam as TaskMem>::set_word)	no
+[microkernel] <M as HdrMem>::rd	max(@microkernel::objhdr::<ObjRam as HdrMem>::rd, @microkernel::taskframe::<WordsAsHdr as HdrMem>::rd)	no
+[microkernel] <M as HdrMem>::wr	max(@microkernel::objhdr::<ObjRam as HdrMem>::wr, @microkernel::taskframe::<WordsAsHdr as HdrMem>::wr)	no
+[microkernel] <M as InboxMem>::slot_block	@microkernel::taskframe::<RingAt as InboxMem>::slot_block	no
+[microkernel] <M as InboxMem>::set_slot_block	@microkernel::taskframe::<RingAt as InboxMem>::set_slot_block	no
+[microkernel] <M as InboxMem>::ctl_block	@microkernel::taskframe::<RingAt as InboxMem>::ctl_block	no
+[microkernel] <M as InboxMem>::set_ctl_block	@microkernel::taskframe::<RingAt as InboxMem>::set_ctl_block	no
+[microkernel] SealedCap::from_words	@synthyrion_capauth::SealedCap::from_words	no
+[microkernel] SealedCap::to_words	@synthyrion_capauth::SealedCap::to_words	no
+[microkernel] Rights::bits	4	no
+[microkernel] Rights::from_bits_truncate	8	no
+<ChainMut<'_, Sc, 64, 32, 51> as Deref>::deref	@microkernel::chainstore::<ChainMut<'_, R, CAP, D, B> as Deref>::deref	no
+[microkernel] <ObjRam as HdrMem>::rd	@microkernel::objhdr::<ObjRam as HdrMem>::rd	no
+[microkernel] <ObjRam as HdrMem>::wr	@microkernel::objhdr::<ObjRam as HdrMem>::wr	no
+[synthyrion_capauth] core::slice::get	15	yes
+[synthyrion_capauth] core::slice::get_mut	15	yes
+[synthyrion_capauth] Rights::from_bits_truncate	8	no
+[microkernel] <ReadOverlay<'_> as TaskMem>::word	@microkernel::tasktable::<ReadOverlay as TaskMem>::word	no
+<Result<u64, vcpu::HvError> as FromResidual<Result<Infallible, vcpu::HvError>>>::from_residual	12	yes
+<EptEncodeError as PartialEq>::eq	16	yes
+<NptEncodeError as PartialEq>::eq	16	yes
+<Stage2EncodeError as PartialEq>::eq	16	yes
+<Result<(), vcpu::HvError> as Try>::branch	16	yes
+<Option<(u64, u64, ept_tables::Leaf)> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Option<ept_tables::Tree> as Try>::branch	8	yes
+<Option<Found> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Option<Found> as Try>::branch	8	yes
+<alloc::vec::Vec<u64> as DerefMut>::deref_mut	14	yes
+<usize as TryFrom<u32>>::try_from	8	yes
+<u32 as TryFrom<usize>>::try_from	12	yes
+<alloc::vec::Vec<u32> as DerefMut>::deref_mut	14	yes
+<alloc::vec::Vec<u8> as DerefMut>::deref_mut	14	yes
+<alloc::vec::Vec<u8> as Deref>::deref	14	yes
+<Option<(u64, u64, ept_tables::Leaf)> as Try>::branch	8	yes
+<Option<IoLeaf> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Result<(), LeafErr> as FromResidual<Result<Infallible, LeafErr>>>::from_residual	12	yes
+<Result<(), LeafErr> as Try>::branch	16	yes
+<Result<u64, LeafErr> as Try>::branch	16	yes
+<PageSize as PartialEq>::ne	24	yes
+<Result<(), iospace::IoError> as FromResidual<Result<Infallible, iospace::IoError>>>::from_residual	12	yes
+<Result<(), iospace::IoError> as Try>::branch	16	yes
+<Result<(u64, u64, PageSize), iospace::IoError> as Try>::branch	16	yes
+<Result<(usize, u32), iospace::IoError> as Try>::branch	16	yes
+<Result<&IoIndex, iospace::IoError> as Try>::branch	16	yes
+<Result<(usize, u32), iospace::IoError> as FromResidual<Result<Infallible, iospace::IoError>>>::from_residual	12	yes
+<Option<&IoIndex> as Try>::branch	8	yes
+<Option<IoHome> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Option<Obj> as Try>::branch	8	yes
+<Option<PageSize> as Try>::branch	8	yes
+<Option<PageSize> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Result<PageSize, vcpu::HvError> as Try>::branch	16	yes
+<alloc::vec::Vec<hypervisor::Range> as Deref>::deref	14	yes
+ept_leaf_entry	@hypervisor::ept_leaf_entry	no
+ept_leaf_entry_wx	@hypervisor::ept_leaf_entry_wx	no
+npt_leaf_entry	@hypervisor::npt_leaf_entry	no
+s2_leaf_entry	@hypervisor::s2_leaf_entry	no
+npt_entry_perms	@hypervisor::npt_entry_perms	no
+s2_entry_perms	@hypervisor::s2_entry_perms	no
+hypervisor::Range::new	@hypervisor::Range::new	no
+hypervisor::Range::overlaps	@hypervisor::Range::overlaps	no
+Frame::addr	@synthyrion_pmm::Frame::addr	no
+Option::as_deref	16	yes
+<&[u64] as IntoIterator>::into_iter	31	yes
+<Option<(CapRec, u64)> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Option<(CapRec, u64)> as Try>::branch	8	yes
+<Option<(CnMeta, u64)> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Option<(CnMeta, u64)> as Try>::branch	8	yes
+<Option<CapNode> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Option<CapNode> as Try>::branch	8	yes
+<Option<CapRec> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Option<CapRec> as Try>::branch	8	yes
+<Option<NodeId> as Try>::branch	8	yes
+<Option<Option<u64>> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Option<[u64; 16]> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Option<[u64; 16]> as Try>::branch	8	yes
+<Option<synthyrion_caps::ObjKind> as Try>::branch	8	yes
+<Option<linktree::Links> as Try>::branch	8	yes
+<Result<(), cspace::CsError> as FromResidual<Result<Infallible, cspace::CsError>>>::from_residual	12	yes
+<Result<(), cspace::CsError> as Try>::branch	16	yes
+<Result<CapNode, cspace::CsError> as Try>::branch	16	yes
+<Result<Option<SlotView>, cspace::CsError> as FromResidual<Result<Infallible, cspace::CsError>>>::from_residual	12	yes
+<Result<Option<u64>, cspace::CsError> as FromResidual<Result<Infallible, cspace::CsError>>>::from_residual	12	yes
+<Result<Option<u64>, cspace::CsError> as Try>::branch	16	yes
+<Result<u16, cspace::CsError> as Try>::branch	16	yes
+<Result<u64, cspace::CsError> as Try>::branch	16	yes
+<synthyrion_caps::Rights as PartialEq>::ne	16	yes
+<u32 as From<u16>>::from	8	yes
+<u32 as From<u8>>::from	8	yes
+<u64 as From<u16>>::from	8	yes
+<usize as From<u16>>::from	8	yes
+Result::unwrap_or	12	yes
+core::num::checked_shl	24	yes
+core::num::wrapping_shl	24	yes
+core::num::wrapping_shr	24	yes
+<&[pure::Window] as IntoIterator>::into_iter	31	yes
+<core::slice::Iter<'_, pure::Window> as Iterator>::next	27	yes
+core::num::checked_rem	16	yes
+[microkernel] FrameAllocator::free	@synthyrion_pmm::FrameAllocator::free	no
+[microkernel] FrameAllocator::reserve	@synthyrion_pmm::FrameAllocator::reserve	no
+[synthyrion_pmm] core::slice::get	15	yes
+[synthyrion_pmm] core::slice::get_mut	15	yes
+[synthyrion_pmm] <Vec<u64> as Deref>::deref	14	yes
+[synthyrion_pmm] <Vec<u64> as DerefMut>::deref_mut	14	yes
+[synthyrion_pmm] <usize as Ord>::min	21	yes
+[synthyrion_pmm] <&u64 as BitAnd<u64>>::bitand	12	yes
+<Option<(u16, usize)> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Option<(u64, CapRec)> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Option<CnMeta> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Option<bool> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+<Option<u16> as Try>::branch	8	yes
+<Result<(), LocErr> as FromResidual<Result<Infallible, LocErr>>>::from_residual	12	yes
+<Result<(), LocErr> as Try>::branch	16	yes
+<Result<u64, LocErr> as Try>::branch	16	yes
+<u64 as From<bool>>::from	8	yes
+core::num::checked_div	16	yes
+core::slice::first	12	yes
+<BornCellState as PartialEq>::eq	60	yes
+<BornCellState as PartialEq>::ne	62	yes
+<ObjMut<'_> as DerefMut>::deref_mut	@microkernel::objtab::<ObjMut<'_> as DerefMut>::deref_mut	no
+[microkernel] <Option<CnMeta> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+[microkernel] <Option<u16> as Try>::branch	12	yes
+[microkernel] <Result<(u64, usize), cspace::CsError> as Try>::branch	12	yes
+[microkernel] <Result<Option<SlotHead>, cspace::CsError> as FromResidual<Result<Infallible, cspace::CsError>>>::from_residual	16	yes
+[microkernel] <Result<(u64, usize), cspace::CsError> as FromResidual<Result<Infallible, cspace::CsError>>>::from_residual	16	yes
+[microkernel] <Option<SlotHead> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+[microkernel] <Result<(u64, usize, synthyrion_caps::Rights), cspace::LookupFault> as FromResidual<Result<Infallible, cspace::LookupFault>>>::from_residual	16	yes
+[microkernel] <Result<CnMeta, cspace::LookupFault> as Try>::branch	12	yes
+[microkernel] <Result<u32, cspace::LookupFault> as Try>::branch	12	yes
+[microkernel] <Result<u64, cspace::LookupFault> as Try>::branch	12	yes
+<core::ops::Range<i32> as IntoIterator>::into_iter	8	yes
+<core::ops::Range<i32> as Iterator>::next	34	yes
+core::num::checked_shr	24	yes
+[microkernel] <A as LinkAccess>::links	max(@microkernel::cspace::<Tree as LinkAccess>::links, @microkernel::cspace::<TreeRo as LinkAccess>::links, @microkernel::objtab::<RoLinks as LinkAccess>::links, @microkernel::objtab::<RwLinks as LinkAccess>::links)	no
+[microkernel] <Option<linktree::Links> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+[microkernel] <Option<ObjView> as FromResidual<Option<Infallible>>>::from_residual	12	yes
+[microkernel] <Option<Option<ObjView>> as Try>::branch	12	yes
+[microkernel] <Option<ObjView> as Try>::branch	12	yes
+[microkernel] <A as LinkAccess>::set_links	max(@microkernel::cspace::<Tree as LinkAccess>::set_links, @microkernel::cspace::<TreeRo as LinkAccess>::set_links, @microkernel::objtab::<RoLinks as LinkAccess>::set_links, @microkernel::objtab::<RwLinks as LinkAccess>::set_links)	no
+[microkernel] <T as TargetWrite>::write_target	max(@microkernel::framenodes::<BlockTarget as TargetWrite>::write_target, @microkernel::objhdr::<SlotTarget as TargetWrite>::write_target)	no
+<Option<Option<u32>> as PartialEq>::eq	36	yes
+[microkernel] Result::is_ok	12	yes
+[microkernel] Rights::intersection	8	no
+[microkernel] GuardedArr::reload	@synthyrion_kheal::GuardedArr::reload	no
+[microkernel] GuardedArr::raw_words	@synthyrion_kheal::GuardedArr::raw_words	no
+[microkernel] FaultLog::record	@synthyrion_kheal::FaultLog::record	no
+<Option<(u32, u32)> as Try>::branch	12	yes
+<Option<Option<u32>> as Try>::branch	12	yes
+<alloc::vec::Vec<u16> as DerefMut>::deref_mut	14	yes
+<Result<(u64, u64), LocErr> as FromResidual<Result<Infallible, LocErr>>>::from_residual	12	yes
+<Result<u64, LocErr> as FromResidual<Result<Infallible, LocErr>>>::from_residual	12	yes
+<Result<Option<u64>, LocErr> as FromResidual<Result<Infallible, LocErr>>>::from_residual	12	yes
+<Result<(u64, u64, u64), LocErr> as Try>::branch	16	yes
+<Result<(u64, u64), LocErr> as Try>::branch	12	yes
+<Option<()> as Try>::branch	8	yes
+<Option<[u64; 13]> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+<Option<[u64; 32]> as Try>::branch	16	yes
+core::num::trailing_zeros	96	yes
+<u16 as TryFrom<usize>>::try_from	12	yes
+<alloc::vec::Vec<(u64, usize, u64)> as Deref>::deref	14	yes
+<alloc::vec::Vec<(usize, u64)> as Deref>::deref	14	yes
+<alloc::vec::Vec<u32> as Deref>::deref	14	yes
+<alloc::vec::Vec<(u64, u64, u64)> as Deref>::deref	14	yes
+<alloc::vec::Vec<[u64; 5]> as DerefMut>::deref_mut	14	yes
+<Option<PoolHead> as Try>::branch	8	yes
+<Result<(u64, u64, PageSize), objects::MapError> as Try>::branch	12	yes
+<Result<(), objects::MapError> as FromResidual<Result<Infallible, objects::MapError>>>::from_residual	12	yes
+<Option<MapRec> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+[microkernel] FrameAllocator::alloc	@synthyrion_pmm::FrameAllocator::alloc	no
+[microkernel] FrameAllocator::free_count	@synthyrion_pmm::FrameAllocator::free_count	no
+core::num::trailing_ones	112	yes
+[microkernel] AddressSpace::rec_words	@synthyrion_vmm::AddressSpace::rec_words	no
+[microkernel] AddressSpace::set_rec_words	@synthyrion_vmm::AddressSpace::set_rec_words	no
+[microkernel] AddressSpace::use_table_supply	@synthyrion_vmm::AddressSpace::use_table_supply	no
+is_canonical	@synthyrion_vmm::is_canonical	no
+tables_needed_in_empty_tree	@synthyrion_vmm::tables_needed_in_empty_tree	no
+<Option<&RootRec> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+<Option<&mut RootRec> as Try>::branch	8	yes
+<core::slice::Iter<'_, (u64, usize, u64)> as Iterator>::next	27	yes
+<core::slice::Iter<'_, (u64, usize, u64)> as IntoIterator>::into_iter	8	yes
+<core::slice::Iter<'_, (usize, u64)> as Iterator>::next	27	yes
+<core::slice::Iter<'_, (usize, u64)> as IntoIterator>::into_iter	8	yes
+<core::slice::Iter<'_, u64> as Iterator>::next	27	yes
+<core::slice::Iter<'_, u64> as IntoIterator>::into_iter	8	yes
+<usize as From<bool>>::from	8	yes
+<core::slice::Iter<'_, u32> as Iterator>::next	27	yes
+<core::slice::Iter<'_, u32> as IntoIterator>::into_iter	8	yes
+<Take<core::slice::IterMut<'_, u64>> as IntoIterator>::into_iter	8	yes
+<Take<core::slice::IterMut<'_, u64>> as Iterator>::next	54	yes
+<core::slice::IterMut<'_, u64> as Iterator>::take	12	yes
+core::mem::forget	8	yes
+core::mem::replace	16	yes
+Option::flatten	16	yes
+<Option<(R, chainstore::Links)> as Try>::branch	12	yes
+<Option<(u64, Option<u64>)> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+<Result<[u64; 32], LocErr> as Try>::branch	16	yes
+<Result<objhdr::Healed, LocErr> as FromResidual<Result<Infallible, LocErr>>>::from_residual	12	yes
+<Result<bool, LocErr> as FromResidual<Result<Infallible, LocErr>>>::from_residual	12	yes
+<alloc::vec::Vec<(cspace::Work, Guarded<3, u64::MAX>)> as DerefMut>::deref_mut	14	yes
+<Option<cspace::Work> as FromResidual<Option<Infallible>>>::from_residual	8	yes
+[microkernel] Guarded::from_words	@synthyrion_kheal::Guarded::from_words	no
+[microkernel] Guarded::parity_ok	@synthyrion_kheal::Guarded::parity_ok	no
+[microkernel] Guarded::scrub_all	@synthyrion_kheal::Guarded::scrub_all	no
+<Option<&mut u16> as Try>::branch	20	yes
+<Option<u16> as FromResidual<Option<Infallible>>>::from_residual	16	yes
+<Result<u64, iospace::IoError> as FromResidual<Result<Infallible, iospace::IoError>>>::from_residual	20	yes
+<Result<(), objects::ObjError> as Try>::branch	20	yes
+<Result<u64, objects::ObjError> as FromResidual<Result<Infallible, objects::ObjError>>>::from_residual	20	yes
+<Result<u64, objects::ObjError> as Try>::branch	20	yes
+<Result<(u64, u64), objects::ObjError> as Try>::branch	20	yes
+<Result<usize, objects::ObjError> as Try>::branch	20	yes
+<Result<[u64; 13], LocErr> as FromResidual<Result<Infallible, LocErr>>>::from_residual	20	yes
+<Result<usize, LocErr> as FromResidual<Result<Infallible, LocErr>>>::from_residual	20	yes
+<Result<[u64; 13], LocErr> as Try>::branch	20	yes
+<Result<u32, LocErr> as FromResidual<Result<Infallible, LocErr>>>::from_residual	20	yes
+<Result<(usize, u64), LocErr> as FromResidual<Result<Infallible, LocErr>>>::from_residual	20	yes
+<Result<usize, LocErr> as Try>::branch	20	yes
+<Option<(ObjView, Option<u64>)> as FromResidual<Option<Infallible>>>::from_residual	16	yes
+<Option<[u64; 13]> as Try>::branch	20	yes
+<Result<(), StoreErr> as FromResidual<Result<Infallible, StoreErr>>>::from_residual	20	yes
+<Result<(), StoreErr> as Try>::branch	20	yes
+<Option<(Obj, Option<u64>)> as FromResidual<Option<Infallible>>>::from_residual	16	yes
+<Option<(ObjView, Option<u64>)> as Try>::branch	20	yes
+<Option<[u64; B]> as FromResidual<Option<Infallible>>>::from_residual	16	yes
+<Option<&vcpu::record::VcpuHome> as Try>::branch	20	yes
+<Option<Option<(u64, usize)>> as FromResidual<Option<Infallible>>>::from_residual	16	yes
+<Option<[u64; 2]> as Try>::branch	20	yes
+<Option<[u64; 6]> as Try>::branch	20	yes
+<Option<(usize, u64)> as FromResidual<Option<Infallible>>>::from_residual	16	yes
+<Option<(u64, u64, u64, hypervisor::Perms)> as FromResidual<Option<Infallible>>>::from_residual	16	yes
+<Option<(u64, u64, u64, hypervisor::Perms)> as Try>::branch	20	yes
+<Option<VcpuMeta> as FromResidual<Option<Infallible>>>::from_residual	16	yes
+<Option<vcpu::Backend> as Try>::branch	20	yes
+<Option<vcpu::VcpuState> as Try>::branch	20	yes
+<Option<(u64, bool)> as FromResidual<Option<Infallible>>>::from_residual	16	yes
+<Result<objects::RevokeStep, objects::ObjError> as FromResidual<Result<Infallible, objects::ObjError>>>::from_residual	20	yes
+<Option<(Option<u64>, Option<u64>)> as FromResidual<Option<Infallible>>>::from_residual	16	yes
+<Option<(u64, Share)> as FromResidual<Option<Infallible>>>::from_residual	16	yes
+<Option<NonZero<u64>> as Try>::branch	20	yes
+<Option<RoView<KView<'_>>> as FromResidual<Option<Infallible>>>::from_residual	16	yes
+<Result<objects::RevokeStep, cspace::CsError> as FromResidual<Result<Infallible, cspace::CsError>>>::from_residual	20	yes
+Option::as_deref_mut	16	yes
+<Copied<core::slice::Iter<'_, usize>> as IntoIterator>::into_iter	8	yes
+<Copied<core::slice::Iter<'_, usize>> as Iterator>::next	54	yes
+<Rev<core::slice::Iter<'_, u64>> as IntoIterator>::into_iter	8	yes
+<Rev<core::slice::Iter<'_, u64>> as Iterator>::next	54	yes
+<core::slice::Iter<'_, u64> as Iterator>::rev	16	yes
+<core::slice::IterMut<'_, usize> as IntoIterator>::into_iter	8	yes
+<core::slice::IterMut<'_, usize> as Iterator>::next	27	yes
+<Take<core::slice::Iter<'_, ObjView>> as IntoIterator>::into_iter	8	yes
+<core::slice::Iter<'_, ObjView> as Iterator>::take	16	yes
+<Zip<core::slice::Iter<'_, u64>, core::slice::Iter<'_, u64>> as IntoIterator>::into_iter	8	yes
+<Zip<core::slice::Iter<'_, u64>, core::slice::Iter<'_, u64>> as Iterator>::next	96	yes
+<core::slice::Iter<'_, u64> as Iterator>::zip	16	yes
+<Enumerate<core::slice::IterMut<'_, u8>> as IntoIterator>::into_iter	8	yes
+<Enumerate<core::slice::IterMut<'_, u8>> as Iterator>::next	54	yes
+<core::slice::IterMut<'_, u8> as Iterator>::enumerate	16	yes
+<Chain<core::slice::Iter<'_, u64>, core::slice::Iter<'_, u64>> as IntoIterator>::into_iter	8	yes
+<Chain<core::slice::Iter<'_, u64>, core::slice::Iter<'_, u64>> as Iterator>::next	96	yes
+<core::slice::Iter<'_, u64> as Iterator>::chain	16	yes
+core::mem::drop	8	yes
+<Enumerate<core::slice::Iter<'_, Option<u16>>> as IntoIterator>::into_iter	8	yes
+<Enumerate<core::slice::Iter<'_, Option<u16>>> as Iterator>::next	54	yes
+<core::slice::Iter<'_, Option<u16>> as Iterator>::enumerate	16	yes
+core::slice::last	12	yes
+<Copied<Take<core::slice::Iter<'_, u64>>> as IntoIterator>::into_iter	8	yes
+<Copied<Take<core::slice::Iter<'_, u64>>> as Iterator>::next	96	yes
+<core::slice::Iter<'_, u64> as Iterator>::take	16	yes
+<core::slice::IterMut<'_, u64> as Iterator>::zip	16	yes
+<core::slice::IterMut<'_, Option<u64>> as IntoIterator>::into_iter	8	yes
+<core::slice::IterMut<'_, Option<u64>> as Iterator>::next	27	yes
+core::mem::forget R>	8	yes
+<NonZero<u64> as PartialEq>::ne	24	yes
+<Enumerate<core::slice::Iter<'_, CoreTlb>> as IntoIterator>::into_iter	8	yes
+<Enumerate<core::slice::Iter<'_, CoreTlb>> as Iterator>::next	54	yes
+<Option<u16> as PartialEq>::ne	24	yes
+<core::slice::Iter<'_, CoreTlb> as Iterator>::enumerate	16	yes
+<Option<bool> as PartialEq>::eq	16	yes
+<usize as Ord>::max	21	yes
+[microkernel] AsidPool::new	@synthyrion_vmm::asid::AsidPool::new	no
+[microkernel] AsidPool::generation	@synthyrion_vmm::asid::AsidPool::generation	no
+[microkernel] AsidPool::last	@synthyrion_vmm::asid::AsidPool::last	no
+[microkernel] AsidPool::max	@synthyrion_vmm::asid::AsidPool::max	no
+[microkernel] AsidPool::restore	@synthyrion_vmm::asid::AsidPool::restore	no
+[microkernel] AsidPool::unmap_invalidation	@synthyrion_vmm::asid::AsidPool::unmap_invalidation	no
+[microkernel] SealedCap::rights	@synthyrion_capauth::SealedCap::rights	no
+[microkernel] Ring::new	@synthyrion_ring::Ring::new	no
+[microkernel] Ring::parts	@synthyrion_ring::Ring::parts	no
+[microkernel] GuardedArr::parity_ok	@synthyrion_kheal::GuardedArr::parity_ok	no
+[microkernel] GuardedArr::word_ok	@synthyrion_kheal::GuardedArr::word_ok	no
+[microkernel] retype_base	@synthyrion_vmm::retype_base	no
+<Result<u64, BigError> as Try>::branch	20	yes
+<u16 as Ord>::min	21	yes
+<Result<(u64, u64), BigError> as FromResidual<Result<Infallible, BigError>>>::from_residual	20	yes
+<u16 as Ord>::max	21	yes
+[microkernel] ColourPolicy::allows	@synthyrion_smp::colour::ColourPolicy::allows	no
+[microkernel] ColourPolicy::active	@synthyrion_smp::colour::ColourPolicy::active	no
+<RoView<KView<'_>> as Deref>::deref	@synthyrion_vmm::treeview::<RoView<M> as Deref>::deref	no
+<Option<SpaceBirth> as PartialEq>::eq	16	yes
+<Stage2Mem as PartialEq>::eq	16	yes
+[microkernel] <dyn iospace::IoMmu as iospace::IoMmu>::map	@synthyrion_gatecases::<NullIommu as IoMmu>::map	no
+[microkernel] <dyn iospace::IoMmu as iospace::IoMmu>::unmap	@synthyrion_gatecases::<NullIommu as IoMmu>::unmap	no
+<Option<(u32, u32, u32)> as FromResidual<Option<Infallible>>>::from_residual	16	yes

@@ -1,0 +1,8 @@
+isabelle theory files: 173
+isabelle theory lines: 27740
+isabelle lemma/theorem/corollary statements: 1523
+isabelle sorry/oops/axiomatization: 0
+lean files: 114
+lean theorem/lemma decls: 428
+lean sorry: 0
+verus files: 5

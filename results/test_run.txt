@@ -1,0 +1,16 @@
+Run of `cargo test --all-targets --all-features` at the repository root (engine and subject), 2026-11-26 23:11 
+Toolchain: rustc 1.96.0 (ac68faa20 2026-05-25)
+Exit code: 0
+
+lib.rs                       ok: 25 passed, 0 failed, 0 ignored
+connection.rs                ok: 1 passed, 0 failed, 0 ignored
+grouping.rs                  ok: 1 passed, 0 failed, 0 ignored
+ledger_proofs.rs             ok: 8 passed, 0 failed, 0 ignored
+mss_proofs.rs                ok: 3 passed, 0 failed, 0 ignored
+pqsig_proofs.rs              ok: 5 passed, 0 failed, 0 ignored
+self_audit.rs                ok: 7 passed, 0 failed, 0 ignored
+symbolic_proofs.rs           ok: 24 passed, 0 failed, 0 ignored
+lib.rs                       ok: 0 passed, 0 failed, 0 ignored
+domain.rs                    ok: 10 passed, 0 failed, 0 ignored
+
+TOTAL passed: 84

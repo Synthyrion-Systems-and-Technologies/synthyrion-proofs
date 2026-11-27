@@ -1,0 +1,45 @@
+{
+  "title": "Synthyrion proofs: bounded-proof results, timing-analysis tables and the proof engine",
+  "upload_type": "dataset",
+  "description": "Results, checker outputs and a runnable bounded proof engine behind the Synthyrion Core L5 kernel: the panic-freedom census of 5,659 kernel decision functions, the worst-case-timing registry of 140 kernel entry points with the tables a bound is computed from, the bounded-proof statements with their domains and outcomes, SHA-512 fingerprints of the checker outputs with the commit they were measured on, and the proof engine with a small subject. The repository contains no kernel source. Accompanies the architecture and security report and the methods report by the same authors. These are tested, bounded and panic-free results; there is no whole-kernel functional-correctness proof and no certification.",
+  "creators": [
+    {
+      "name": "Gelfman, Matthew",
+      "affiliation": "Synthyrion Systems and Technologies"
+    },
+    {
+      "name": "Behrends-Gelfman, Melissa",
+      "affiliation": "Synthyrion Systems and Technologies"
+    }
+  ],
+  "keywords": [
+    "microkernel",
+    "Rust",
+    "bounded proof",
+    "exhaustive checking",
+    "worst-case execution time",
+    "verification methods"
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "version": "1.0.0",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.24581739",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.24581779",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://synthyrion.com",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    }
+  ]
+}

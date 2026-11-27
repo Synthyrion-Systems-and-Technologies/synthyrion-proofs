@@ -1,0 +1,141 @@
+entry	crate	function	status	kind	bound_mir_statements	first_obstacle_if_pending
+syscall_dispatch	microkernel	Kernel::dispatch	PENDING	kernel-path		Unbounded; root cause in tasktable::Task::inbox_drain_all: call to alloc::vec::Vec::push in bb11 has no declared cost
+send	microkernel	Kernel::deliver	BOUNDED	kernel-path	9424426	
+send_caps	microkernel	ipcx::Kernel::send_caps	BOUNDED	kernel-path	13714303	
+call	microkernel	ipcx::Kernel::call	BOUNDED	kernel-path	248296971	
+reply	microkernel	ipcx::Kernel::reply	BOUNDED	kernel-path	271428806	
+reply_recv	microkernel	ipcx::Kernel::reply_recv	BOUNDED	kernel-path	6251034876	
+receive	microkernel	ipcx::Kernel::receive	BOUNDED	kernel-path	5978878403	
+signal	microkernel	ipcx::Kernel::signal	BOUNDED	kernel-path	167645997	
+wait	microkernel	ipcx::Kernel::wait	BOUNDED	kernel-path	10695972	
+bind_notification	microkernel	ipcx::Kernel::bind_notification	BOUNDED	kernel-path	2807270	
+unbind_notification	microkernel	ipcx::Kernel::unbind_notification	BOUNDED	kernel-path	1440151	
+bind_irq	microkernel	ipcx::Kernel::bind_irq	BOUNDED	kernel-path	1666306	
+unbind_irq	microkernel	ipcx::Kernel::unbind_irq	BOUNDED	kernel-path	772795	
+set_fault_handler	microkernel	ipcx::Kernel::set_fault_handler	BOUNDED	kernel-path	2098607	
+set_partition_schedule	microkernel	ipcx::Kernel::install_partition_schedule_sealed	BOUNDED	kernel-path	5041828094	
+reset_partition_schedule	microkernel	ipcx::Kernel::reset_partition_schedule_sealed	BOUNDED	kernel-path	11857867300	
+retype	microkernel	objects::Kernel::retype	PENDING	kernel-path		Unbounded; root cause in objects::Kernel::retype_in_for: call to <drop of heap-owning alloc::vec::Vec<objects::Made>: frees heap, allocator work has no cost model> in bb0 has no declared cost
+revoke_untyped_step	microkernel	objects::Kernel::revoke_untyped_step	PENDING	kernel-path		Unbounded; root cause in objects::Kernel::revoke_untyped_step: call to <drop of heap-owning alloc::vec::Vec<u64>: frees heap, allocator work has no cost model> in bb0 has no declared cost
+map_frame	microkernel	objects::Kernel::map_frame	PENDING	kernel-path		Unbounded; root cause in space::Spaces::edit: call to synthyrion_vmm::treeview::attach in bb5 has no declared cost
+cnode_copy	microkernel	cspace::Kernel::cnode_copy	BOUNDED	kernel-path	336803404202	
+cnode_mint	microkernel	cspace::Kernel::cnode_mint	BOUNDED	kernel-path	336803404202	
+cnode_move	microkernel	cspace::Kernel::cnode_move	BOUNDED	kernel-path	628667114898	
+cnode_delete	microkernel	cspace::Kernel::cnode_delete	PENDING	kernel-path		Unbounded; root cause in capguard::PendingStack::push: call to alloc::vec::Vec::push in bb3 has no declared cost
+cnode_revoke_step	microkernel	cspace::Kernel::cnode_revoke_step	PENDING	kernel-path		Unbounded; root cause in capguard::PendingStack::push: call to alloc::vec::Vec::push in bb3 has no declared cost
+cnode_lookup	microkernel	cspace::Kernel::cs_lookup_head	BOUNDED	kernel-path	241654478324	
+cnode_lookup_audit	microkernel	cspace::Kernel::cnode_lookup	REFERENCE	reference		
+schedule	microkernel	Kernel::schedule	BOUNDED	kernel-path	3009820446	
+schedule_weighted	microkernel	Kernel::schedule_weighted	BOUNDED	kernel-path	3004703436	
+schedule_2tier	microkernel	Kernel::schedule_2tier	BOUNDED	kernel-path	48766420275	
+schedule_partitioned	microkernel	Kernel::schedule_partitioned	BOUNDED	kernel-path	48790716923	
+revoke_object_caps	microkernel	Kernel::revoke_object_caps	BOUNDED	kernel-path	54776257440	
+revoke_all_caps	microkernel	Kernel::revoke_all_caps	BOUNDED	kernel-path	7089	
+stride_advance	microkernel	stride_advance	BOUNDED	kernel-path	75	
+verify	synthyrion_capauth	CapAuthority::verify	REFERENCE	reference		
+mint	synthyrion_capauth	CapAuthority::mint	REFERENCE	reference		
+btab_BTab__new	synthyrion_btab	BTab::new	BOUNDED	table-method	2	
+btab_BTab__len	synthyrion_btab	BTab::len	BOUNDED	table-method	2	
+btab_BTab__is_empty	synthyrion_btab	BTab::is_empty	BOUNDED	table-method	3	
+btab_BTab__is_full	synthyrion_btab	BTab::is_full	BOUNDED	table-method	3	
+btab_BTab__find	synthyrion_btab	BTab::find	BOUNDED	table-method	790	
+btab_BTab__get	synthyrion_btab	BTab::get	BOUNDED	table-method	822	
+btab_BTab__get_mut	synthyrion_btab	BTab::get_mut	BOUNDED	table-method	823	
+btab_BTab__contains_key	synthyrion_btab	BTab::contains_key	BOUNDED	table-method	806	
+btab_BTab__insert	synthyrion_btab	BTab::insert	BOUNDED	table-method	4102	
+btab_BTab__remove	synthyrion_btab	BTab::remove	BOUNDED	table-method	4445	
+btab_BTab__first	synthyrion_btab	BTab::first	BOUNDED	table-method	33	
+btab_BTab__last	synthyrion_btab	BTab::last	BOUNDED	table-method	61	
+btab_BTab__iter	synthyrion_btab	BTab::iter	BOUNDED	table-method	27	
+btab_BTab__retain	synthyrion_btab	BTab::retain	BOUNDED	table-method	9799	
+btab_BTab__clear	synthyrion_btab	BTab::clear	BOUNDED	table-method	2180	
+btab_BSet__new	synthyrion_btab	BSet::new	BOUNDED	table-method	5	
+btab_BSet__contains	synthyrion_btab	BSet::contains	BOUNDED	table-method	809	
+btab_BSet__insert	synthyrion_btab	BSet::insert	BOUNDED	table-method	4137	
+btab_BSet__remove	synthyrion_btab	BSet::remove	BOUNDED	table-method	4462	
+btab_BSet__iter	synthyrion_btab	BSet::iter	BOUNDED	table-method	47	
+btab_BSet__clear	synthyrion_btab	BSet::clear	BOUNDED	table-method	2183	
+btab__Iter_as_Iterator___next	synthyrion_btab	<Iter as Iterator>::next	BOUNDED	table-method	40	
+btab_BTab__find_index	synthyrion_btab	BTab::find_index	BOUNDED	table-method	698	
+btab_BTab__slot_key	synthyrion_btab	BTab::slot_key	BOUNDED	table-method	31	
+btab_BTab__slot_val	synthyrion_btab	BTab::slot_val	BOUNDED	table-method	31	
+ring_Ring__new	synthyrion_ring	Ring::new	BOUNDED	kernel-path	61	
+ring_Ring__new_at	synthyrion_ring	Ring::new_at	BOUNDED	kernel-path	52	
+ring_Ring__sq_entries	synthyrion_ring	Ring::sq_entries	BOUNDED	kernel-path	7	
+ring_Ring__cq_entries	synthyrion_ring	Ring::cq_entries	BOUNDED	kernel-path	7	
+ring_Ring__sq_head	synthyrion_ring	Ring::sq_head	BOUNDED	kernel-path	2	
+ring_Ring__cq_tail	synthyrion_ring	Ring::cq_tail	BOUNDED	kernel-path	2	
+ring_Ring__is_faulted	synthyrion_ring	Ring::is_faulted	BOUNDED	kernel-path	2	
+ring_Ring__is_cancelling	synthyrion_ring	Ring::is_cancelling	BOUNDED	kernel-path	2	
+ring_Ring__sq_base	synthyrion_ring	Ring::sq_base	BOUNDED	kernel-path	2	
+ring_Ring__cq_base	synthyrion_ring	Ring::cq_base	BOUNDED	kernel-path	23	
+ring_Ring__total_bytes	synthyrion_ring	Ring::total_bytes	BOUNDED	kernel-path	53	
+ring_Ring__frames	synthyrion_ring	Ring::frames	BOUNDED	kernel-path	75	
+ring_Entered__value	synthyrion_ring	Entered::value	BOUNDED	kernel-path	31	
+ring_Ring__init_header	synthyrion_ring	Ring::init_header	BOUNDED	kernel-path	60525828	
+ring_Ring__enter	synthyrion_ring	Ring::enter	PENDING	kernel-path		Unbounded; root cause in Ring::enter: call to <S as Server>::serve in bb66 has no declared cost
+kheal_check_word	synthyrion_kheal	check_word	BOUNDED	kernel-path	538	
+kheal_Guarded__word_ok	synthyrion_kheal	Guarded::word_ok	BOUNDED	kernel-path	516	
+kheal_Guarded__parity_ok	synthyrion_kheal	Guarded::parity_ok	BOUNDED	kernel-path	466	
+kheal_Guarded__get	synthyrion_kheal	Guarded::get	BOUNDED	kernel-path	571	
+kheal_Guarded__heal_word	synthyrion_kheal	Guarded::heal_word	BOUNDED	kernel-path	302127	
+kheal_Guarded__heal_parity	synthyrion_kheal	Guarded::heal_parity	BOUNDED	kernel-path	300476	
+kheal_Guarded__get_heal	synthyrion_kheal	Guarded::get_heal	BOUNDED	kernel-path	302718	
+kheal_Guarded__set	synthyrion_kheal	Guarded::set	BOUNDED	kernel-path	303217	
+kheal_Guarded__set_counted	synthyrion_kheal	Guarded::set_counted	BOUNDED	kernel-path	303197	
+kheal_Guarded__scrub_range	synthyrion_kheal	Guarded::scrub_range	BOUNDED	kernel-path	309149766	
+kheal_Guarded__scrub_all	synthyrion_kheal	Guarded::scrub_all	BOUNDED	kernel-path	309149775	
+kheal_Guarded__scrub_slots	synthyrion_kheal	Guarded::scrub_slots	BOUNDED	kernel-path	7	
+kheal_Guarded__raw	synthyrion_kheal	Guarded::raw	BOUNDED	kernel-path	32	
+kheal_Guarded__scan	synthyrion_kheal	Guarded::scan	BOUNDED	kernel-path	9	
+kheal_FaultLog__record	synthyrion_kheal	FaultLog::record	BOUNDED	kernel-path	136	
+kheal_FaultLog__recent	synthyrion_kheal	FaultLog::recent	BOUNDED	kernel-path	41	
+kheal_Scrubber__cursor	synthyrion_kheal	Scrubber::cursor	BOUNDED	kernel-path	8	
+kheal_Scrubber__step	synthyrion_kheal	Scrubber::step	REFERENCE	reference		
+kheal_Scan__next	synthyrion_kheal	<Scan as Iterator>::next	BOUNDED	kernel-path	38323	
+selfheal_Kernel__selfheal_step	microkernel	selfheal::Kernel::selfheal_step	PENDING	kernel-path		Unbounded; root cause in rootidx::RootTable::born_roots: call to <core::slice::Iter<'_, RootRec> as Iterator>::take in bb1 has no declared cost
+selfheal_Kernel__cap_scrub	microkernel	capheal::Kernel::cap_scrub	BOUNDED	kernel-path	654647706543924	
+selfheal_Kernel__obj_scrub	microkernel	objheal::Kernel::obj_scrub	BOUNDED	kernel-path	19768885410625	
+selfheal_GMut__drop	microkernel	guardmap::drop	REFERENCE	reference		
+selfheal_Kernel__cap_contain_members	microkernel	capcontain::Kernel::cap_contain_members	BOUNDED	kernel-path	18883301577762	
+selfheal_Kernel__obj_contain	microkernel	objheal::Kernel::obj_contain	BOUNDED	kernel-path	18883235453476	
+kheal_Scrubber__locate	synthyrion_kheal	Scrubber::locate	BOUNDED	kernel-path	35	
+kheal_Scrubber__advance	synthyrion_kheal	Scrubber::advance	BOUNDED	kernel-path	155	
+kheal_Guarded__set_prechecked	synthyrion_kheal	Guarded::set_prechecked	BOUNDED	kernel-path	1018	
+epoch_find	microkernel	epochtab::EpochFrames::find	BOUNDED	kernel-path	10115	
+epoch_of	microkernel	epochs::EpochTable::epoch_of	BOUNDED	kernel-path	10396	
+epoch_reserve	microkernel	epochs::EpochTable::reserve	BOUNDED	kernel-path	30577783	
+epoch_revoke	microkernel	epochs::EpochTable::revoke	BOUNDED	kernel-path	11585	
+epoch_release	microkernel	epochs::EpochTable::release	BOUNDED	kernel-path	30578097	
+kauth_mint	microkernel	epochs::KernelAuthority::mint	BOUNDED	kernel-path	31303819	
+kauth_verify	microkernel	epochs::KernelAuthority::verify	BOUNDED	kernel-path	727603	
+kauth_revoke_object	microkernel	epochs::KernelAuthority::revoke_object	BOUNDED	kernel-path	70018	
+kauth_release_object	microkernel	epochs::KernelAuthority::release_object	BOUNDED	kernel-path	30578115	
+verify_at	synthyrion_capauth	CapAuthority::verify_at	BOUNDED	kernel-path	717048	
+mint_at	synthyrion_capauth	CapAuthority::mint_at	BOUNDED	kernel-path	715566	
+node_id_purge	microkernel	cspace::nodeid::NodeIds::purge	BOUNDED	kernel-path	42	
+ept_map_frame	microkernel	vcpu::Kernel::ept_map	PENDING	kernel-path		Unbounded; root cause in ept_tables::Kernel::ept_provision_one: call to alloc::collections::BTreeMap::insert in bb25 has no declared cost
+ept_install_table	microkernel	ept_tables::Kernel::ept_install_table	BOUNDED	kernel-path	2646337	
+frame_death_scan	microkernel	vcpu::Kernel::hv_frame_death_step	BOUNDED	kernel-path	61545221	
+kheal_KeyScrubber__locate	synthyrion_kheal	KeyScrubber::locate	BOUNDED	kernel-path	34	
+kheal_KeyScrubber__advance	synthyrion_kheal	KeyScrubber::advance	BOUNDED	kernel-path	202	
+ept_scan_step	microkernel	ept_tables::Kernel::ept_scan_step	BOUNDED	kernel-path	61544137	
+hv_frame_scan_step	microkernel	vcpu::Kernel::hv_frame_scan_step	BOUNDED	kernel-path	61545186	
+rootidx_RootTable__find	microkernel	rootidx::RootTable::find	BOUNDED	table-method	2046	
+rootidx_RootTable__slot	microkernel	rootidx::RootTable::slot	BOUNDED	table-method	624895	
+rootidx_RootTable__unslot	microkernel	rootidx::RootTable::unslot	BOUNDED	table-method	516313	
+rootidx_RootTable__rec	microkernel	rootidx::RootTable::rec	BOUNDED	table-method	2092	
+rootidx_RootTable__has_room_for	microkernel	rootidx::RootTable::has_room_for	BOUNDED	table-method	2071	
+rootidx_RootTable__born_rf	microkernel	rootidx::RootTable::born_rf	BOUNDED	table-method	2134	
+rootidx_RootTable__has_born	microkernel	rootidx::RootTable::has_born	BOUNDED	table-method	2114	
+rootidx_RootTable__birth_of	microkernel	rootidx::RootTable::birth_of	BOUNDED	table-method	2119	
+rootidx_RootTable__has_pending	microkernel	rootidx::RootTable::has_pending	BOUNDED	table-method	2114	
+rootidx_RootTable__set_born	microkernel	rootidx::RootTable::set_born	BOUNDED	table-method	624927	
+rootidx_RootTable__declare	microkernel	rootidx::RootTable::declare	BOUNDED	table-method	624932	
+rootidx_RootTable__declare_if_absent	microkernel	rootidx::RootTable::declare_if_absent	BOUNDED	table-method	624935	
+rootidx_RootTable__stage	microkernel	rootidx::RootTable::stage	BOUNDED	table-method	624934	
+rootidx_RootTable__take_pending	microkernel	rootidx::RootTable::take_pending	BOUNDED	table-method	518429	
+rootidx_RootTable__remove	microkernel	rootidx::RootTable::remove	BOUNDED	table-method	518413	
+rootidx_RootTable__first_born_from	microkernel	rootidx::RootTable::first_born_from	BOUNDED	table-method	251986	
+rootidx_RootTable__born_len	microkernel	rootidx::RootTable::born_len	BOUNDED	table-method	426104	
+retype_tiling_guard	microkernel	objects::Kernel::region_tiled	BOUNDED	kernel-path	535197	

@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use these results, please cite them as below, and cite the accompanying methods report."
+title: "Synthyrion proofs: bounded-proof results, timing-analysis tables and the proof engine"
+type: dataset
+version: "1.0.0"
+date-released: "2026-11-27"
+license: CC-BY-4.0
+repository-code: "https://github.com/Synthyrion-Systems-and-Technologies/synthyrion-proofs"
+url: "https://synthyrion.com"
+abstract: "Results, checker outputs and a runnable bounded proof engine behind the Synthyrion Core L5 kernel: the panic-freedom census of 5,659 kernel decision functions, the worst-case-timing registry of 140 kernel entry points with its tables, the bounded-proof statements with their domains and outcomes, SHA-512 fingerprints of the checker outputs, and the proof engine with a small subject. The repository contains no kernel source."
+keywords:
+  - microkernel
+  - Rust
+  - bounded proof
+  - exhaustive checking
+  - worst-case execution time
+  - verification methods
+authors:
+  - family-names: Gelfman
+    given-names: Matthew
+    affiliation: "Synthyrion Systems and Technologies"
+  - family-names: Behrends-Gelfman
+    given-names: Melissa
+    affiliation: "Synthyrion Systems and Technologies"
+references:
+  - type: report
+    title: "Synthyrion: a first-party Rust capability microkernel, its layered operating-system design, and a measured security comparison"
+    doi: "10.5281/zenodo.24581739"
+    year: 2026
+    authors:
+      - family-names: Gelfman
+        given-names: Matthew
+      - family-names: Behrends-Gelfman
+        given-names: Melissa
+  - type: report
+    title: "How the Synthyrion kernel is proven and finished: bounded proofs, worst-case-time bounding of every entry point, planted faults, the landing gate and the validator"
+    doi: "10.5281/zenodo.24581779"
+    year: 2026
+    authors:
+      - family-names: Gelfman
+        given-names: Matthew
+      - family-names: Behrends-Gelfman
+        given-names: Melissa

@@ -1,0 +1,141 @@
+crate	key	function	status	bound_mir_statements
+synthyrion_btab	btab_BTab__new	synthyrion_btab::BTab::new	BOUNDED	2
+synthyrion_btab	btab_BTab__len	synthyrion_btab::BTab::len	BOUNDED	2
+synthyrion_btab	btab_BTab__is_empty	synthyrion_btab::BTab::is_empty	BOUNDED	3
+synthyrion_btab	btab_BTab__is_full	synthyrion_btab::BTab::is_full	BOUNDED	3
+synthyrion_btab	btab_BTab__find	synthyrion_btab::BTab::find	BOUNDED	790
+synthyrion_btab	btab_BTab__get	synthyrion_btab::BTab::get	BOUNDED	822
+synthyrion_btab	btab_BTab__get_mut	synthyrion_btab::BTab::get_mut	BOUNDED	823
+synthyrion_btab	btab_BTab__contains_key	synthyrion_btab::BTab::contains_key	BOUNDED	806
+synthyrion_btab	btab_BTab__insert	synthyrion_btab::BTab::insert	BOUNDED	4102
+synthyrion_btab	btab_BTab__remove	synthyrion_btab::BTab::remove	BOUNDED	4445
+synthyrion_btab	btab_BTab__first	synthyrion_btab::BTab::first	BOUNDED	33
+synthyrion_btab	btab_BTab__last	synthyrion_btab::BTab::last	BOUNDED	61
+synthyrion_btab	btab_BTab__iter	synthyrion_btab::BTab::iter	BOUNDED	27
+synthyrion_btab	btab_BTab__retain	synthyrion_btab::BTab::retain	BOUNDED	9799
+synthyrion_btab	btab_BTab__clear	synthyrion_btab::BTab::clear	BOUNDED	2180
+synthyrion_btab	btab_BSet__new	synthyrion_btab::BSet::new	BOUNDED	5
+synthyrion_btab	btab_BSet__contains	synthyrion_btab::BSet::contains	BOUNDED	809
+synthyrion_btab	btab_BSet__insert	synthyrion_btab::BSet::insert	BOUNDED	4137
+synthyrion_btab	btab_BSet__remove	synthyrion_btab::BSet::remove	BOUNDED	4462
+synthyrion_btab	btab_BSet__iter	synthyrion_btab::BSet::iter	BOUNDED	47
+synthyrion_btab	btab_BSet__clear	synthyrion_btab::BSet::clear	BOUNDED	2183
+synthyrion_btab	btab__Iter_as_Iterator___next	synthyrion_btab::<Iter as Iterator>::next	BOUNDED	40
+synthyrion_btab	btab_BTab__find_index	synthyrion_btab::BTab::find_index	BOUNDED	698
+synthyrion_btab	btab_BTab__slot_key	synthyrion_btab::BTab::slot_key	BOUNDED	31
+synthyrion_btab	btab_BTab__slot_val	synthyrion_btab::BTab::slot_val	BOUNDED	31
+synthyrion_capauth	verify	synthyrion_capauth::CapAuthority::verify	REFERENCE	
+synthyrion_capauth	mint	synthyrion_capauth::CapAuthority::mint	REFERENCE	
+synthyrion_capauth	verify_at	synthyrion_capauth::CapAuthority::verify_at	BOUNDED	717048
+synthyrion_capauth	mint_at	synthyrion_capauth::CapAuthority::mint_at	BOUNDED	715566
+synthyrion_kheal	kheal_check_word	synthyrion_kheal::check_word	BOUNDED	538
+synthyrion_kheal	kheal_Guarded__word_ok	synthyrion_kheal::Guarded::word_ok	BOUNDED	516
+synthyrion_kheal	kheal_Guarded__parity_ok	synthyrion_kheal::Guarded::parity_ok	BOUNDED	466
+synthyrion_kheal	kheal_Guarded__get	synthyrion_kheal::Guarded::get	BOUNDED	571
+synthyrion_kheal	kheal_Guarded__heal_word	synthyrion_kheal::Guarded::heal_word	BOUNDED	302127
+synthyrion_kheal	kheal_Guarded__heal_parity	synthyrion_kheal::Guarded::heal_parity	BOUNDED	300476
+synthyrion_kheal	kheal_Guarded__get_heal	synthyrion_kheal::Guarded::get_heal	BOUNDED	302718
+synthyrion_kheal	kheal_Guarded__set	synthyrion_kheal::Guarded::set	BOUNDED	303217
+synthyrion_kheal	kheal_Guarded__set_counted	synthyrion_kheal::Guarded::set_counted	BOUNDED	303197
+synthyrion_kheal	kheal_Guarded__scrub_range	synthyrion_kheal::Guarded::scrub_range	BOUNDED	309149766
+synthyrion_kheal	kheal_Guarded__scrub_all	synthyrion_kheal::Guarded::scrub_all	BOUNDED	309149775
+synthyrion_kheal	kheal_Guarded__scrub_slots	synthyrion_kheal::Guarded::scrub_slots	BOUNDED	7
+synthyrion_kheal	kheal_Guarded__raw	synthyrion_kheal::Guarded::raw	BOUNDED	32
+synthyrion_kheal	kheal_Guarded__scan	synthyrion_kheal::Guarded::scan	BOUNDED	9
+synthyrion_kheal	kheal_FaultLog__record	synthyrion_kheal::FaultLog::record	BOUNDED	136
+synthyrion_kheal	kheal_FaultLog__recent	synthyrion_kheal::FaultLog::recent	BOUNDED	41
+synthyrion_kheal	kheal_Scrubber__cursor	synthyrion_kheal::Scrubber::cursor	BOUNDED	8
+synthyrion_kheal	kheal_Scrubber__step	synthyrion_kheal::Scrubber::step	REFERENCE	
+synthyrion_kheal	kheal_Scan__next	synthyrion_kheal::<Scan as Iterator>::next	BOUNDED	38323
+synthyrion_kheal	kheal_Scrubber__locate	synthyrion_kheal::Scrubber::locate	BOUNDED	35
+synthyrion_kheal	kheal_Scrubber__advance	synthyrion_kheal::Scrubber::advance	BOUNDED	155
+synthyrion_kheal	kheal_Guarded__set_prechecked	synthyrion_kheal::Guarded::set_prechecked	BOUNDED	1018
+synthyrion_kheal	kheal_KeyScrubber__locate	synthyrion_kheal::KeyScrubber::locate	BOUNDED	34
+synthyrion_kheal	kheal_KeyScrubber__advance	synthyrion_kheal::KeyScrubber::advance	BOUNDED	202
+synthyrion_ring	ring_Ring__new	synthyrion_ring::Ring::new	BOUNDED	61
+synthyrion_ring	ring_Ring__new_at	synthyrion_ring::Ring::new_at	BOUNDED	52
+synthyrion_ring	ring_Ring__sq_entries	synthyrion_ring::Ring::sq_entries	BOUNDED	7
+synthyrion_ring	ring_Ring__cq_entries	synthyrion_ring::Ring::cq_entries	BOUNDED	7
+synthyrion_ring	ring_Ring__sq_head	synthyrion_ring::Ring::sq_head	BOUNDED	2
+synthyrion_ring	ring_Ring__cq_tail	synthyrion_ring::Ring::cq_tail	BOUNDED	2
+synthyrion_ring	ring_Ring__is_faulted	synthyrion_ring::Ring::is_faulted	BOUNDED	2
+synthyrion_ring	ring_Ring__is_cancelling	synthyrion_ring::Ring::is_cancelling	BOUNDED	2
+synthyrion_ring	ring_Ring__sq_base	synthyrion_ring::Ring::sq_base	BOUNDED	2
+synthyrion_ring	ring_Ring__cq_base	synthyrion_ring::Ring::cq_base	BOUNDED	23
+synthyrion_ring	ring_Ring__total_bytes	synthyrion_ring::Ring::total_bytes	BOUNDED	53
+synthyrion_ring	ring_Ring__frames	synthyrion_ring::Ring::frames	BOUNDED	75
+synthyrion_ring	ring_Entered__value	synthyrion_ring::Entered::value	BOUNDED	31
+synthyrion_ring	ring_Ring__init_header	synthyrion_ring::Ring::init_header	BOUNDED	60525828
+synthyrion_ring	ring_Ring__enter	synthyrion_ring::Ring::enter	PENDING	
+microkernel	syscall_dispatch	microkernel::Kernel::dispatch	PENDING	
+microkernel	send	microkernel::Kernel::deliver	BOUNDED	9424426
+microkernel	send_caps	microkernel::ipcx::Kernel::send_caps	BOUNDED	13714303
+microkernel	call	microkernel::ipcx::Kernel::call	BOUNDED	248296971
+microkernel	reply	microkernel::ipcx::Kernel::reply	BOUNDED	271428806
+microkernel	reply_recv	microkernel::ipcx::Kernel::reply_recv	BOUNDED	6251034876
+microkernel	receive	microkernel::ipcx::Kernel::receive	BOUNDED	5978878403
+microkernel	signal	microkernel::ipcx::Kernel::signal	BOUNDED	167645997
+microkernel	wait	microkernel::ipcx::Kernel::wait	BOUNDED	10695972
+microkernel	bind_notification	microkernel::ipcx::Kernel::bind_notification	BOUNDED	2807270
+microkernel	unbind_notification	microkernel::ipcx::Kernel::unbind_notification	BOUNDED	1440151
+microkernel	bind_irq	microkernel::ipcx::Kernel::bind_irq	BOUNDED	1666306
+microkernel	unbind_irq	microkernel::ipcx::Kernel::unbind_irq	BOUNDED	772795
+microkernel	set_fault_handler	microkernel::ipcx::Kernel::set_fault_handler	BOUNDED	2098607
+microkernel	set_partition_schedule	microkernel::ipcx::Kernel::install_partition_schedule_sealed	BOUNDED	5041828094
+microkernel	reset_partition_schedule	microkernel::ipcx::Kernel::reset_partition_schedule_sealed	BOUNDED	11857867300
+microkernel	retype	microkernel::objects::Kernel::retype	PENDING	
+microkernel	revoke_untyped_step	microkernel::objects::Kernel::revoke_untyped_step	PENDING	
+microkernel	map_frame	microkernel::objects::Kernel::map_frame	PENDING	
+microkernel	cnode_copy	microkernel::cspace::Kernel::cnode_copy	BOUNDED	336803404202
+microkernel	cnode_mint	microkernel::cspace::Kernel::cnode_mint	BOUNDED	336803404202
+microkernel	cnode_move	microkernel::cspace::Kernel::cnode_move	BOUNDED	628667114898
+microkernel	cnode_delete	microkernel::cspace::Kernel::cnode_delete	PENDING	
+microkernel	cnode_revoke_step	microkernel::cspace::Kernel::cnode_revoke_step	PENDING	
+microkernel	cnode_lookup	microkernel::cspace::Kernel::cs_lookup_head	BOUNDED	241654478324
+microkernel	cnode_lookup_audit	microkernel::cspace::Kernel::cnode_lookup	REFERENCE	
+microkernel	schedule	microkernel::Kernel::schedule	BOUNDED	3009820446
+microkernel	schedule_weighted	microkernel::Kernel::schedule_weighted	BOUNDED	3004703436
+microkernel	schedule_2tier	microkernel::Kernel::schedule_2tier	BOUNDED	48766420275
+microkernel	schedule_partitioned	microkernel::Kernel::schedule_partitioned	BOUNDED	48790716923
+microkernel	revoke_object_caps	microkernel::Kernel::revoke_object_caps	BOUNDED	54776257440
+microkernel	revoke_all_caps	microkernel::Kernel::revoke_all_caps	BOUNDED	7089
+microkernel	stride_advance	microkernel::stride_advance	BOUNDED	75
+microkernel	selfheal_Kernel__selfheal_step	microkernel::selfheal::Kernel::selfheal_step	PENDING	
+microkernel	selfheal_Kernel__cap_scrub	microkernel::capheal::Kernel::cap_scrub	BOUNDED	654647706543924
+microkernel	selfheal_Kernel__obj_scrub	microkernel::objheal::Kernel::obj_scrub	BOUNDED	19768885410625
+microkernel	selfheal_GMut__drop	microkernel::guardmap::drop	REFERENCE	
+microkernel	selfheal_Kernel__cap_contain_members	microkernel::capcontain::Kernel::cap_contain_members	BOUNDED	18883301577762
+microkernel	selfheal_Kernel__obj_contain	microkernel::objheal::Kernel::obj_contain	BOUNDED	18883235453476
+microkernel	epoch_find	microkernel::epochtab::EpochFrames::find	BOUNDED	10115
+microkernel	epoch_of	microkernel::epochs::EpochTable::epoch_of	BOUNDED	10396
+microkernel	epoch_reserve	microkernel::epochs::EpochTable::reserve	BOUNDED	30577783
+microkernel	epoch_revoke	microkernel::epochs::EpochTable::revoke	BOUNDED	11585
+microkernel	epoch_release	microkernel::epochs::EpochTable::release	BOUNDED	30578097
+microkernel	kauth_mint	microkernel::epochs::KernelAuthority::mint	BOUNDED	31303819
+microkernel	kauth_verify	microkernel::epochs::KernelAuthority::verify	BOUNDED	727603
+microkernel	kauth_revoke_object	microkernel::epochs::KernelAuthority::revoke_object	BOUNDED	70018
+microkernel	kauth_release_object	microkernel::epochs::KernelAuthority::release_object	BOUNDED	30578115
+microkernel	node_id_purge	microkernel::cspace::nodeid::NodeIds::purge	BOUNDED	42
+microkernel	ept_map_frame	microkernel::vcpu::Kernel::ept_map	PENDING	
+microkernel	ept_install_table	microkernel::ept_tables::Kernel::ept_install_table	BOUNDED	2646337
+microkernel	frame_death_scan	microkernel::vcpu::Kernel::hv_frame_death_step	BOUNDED	61545221
+microkernel	ept_scan_step	microkernel::ept_tables::Kernel::ept_scan_step	BOUNDED	61544137
+microkernel	hv_frame_scan_step	microkernel::vcpu::Kernel::hv_frame_scan_step	BOUNDED	61545186
+microkernel	rootidx_RootTable__find	microkernel::rootidx::RootTable::find	BOUNDED	2046
+microkernel	rootidx_RootTable__slot	microkernel::rootidx::RootTable::slot	BOUNDED	624895
+microkernel	rootidx_RootTable__unslot	microkernel::rootidx::RootTable::unslot	BOUNDED	516313
+microkernel	rootidx_RootTable__rec	microkernel::rootidx::RootTable::rec	BOUNDED	2092
+microkernel	rootidx_RootTable__has_room_for	microkernel::rootidx::RootTable::has_room_for	BOUNDED	2071
+microkernel	rootidx_RootTable__born_rf	microkernel::rootidx::RootTable::born_rf	BOUNDED	2134
+microkernel	rootidx_RootTable__has_born	microkernel::rootidx::RootTable::has_born	BOUNDED	2114
+microkernel	rootidx_RootTable__birth_of	microkernel::rootidx::RootTable::birth_of	BOUNDED	2119
+microkernel	rootidx_RootTable__has_pending	microkernel::rootidx::RootTable::has_pending	BOUNDED	2114
+microkernel	rootidx_RootTable__set_born	microkernel::rootidx::RootTable::set_born	BOUNDED	624927
+microkernel	rootidx_RootTable__declare	microkernel::rootidx::RootTable::declare	BOUNDED	624932
+microkernel	rootidx_RootTable__declare_if_absent	microkernel::rootidx::RootTable::declare_if_absent	BOUNDED	624935
+microkernel	rootidx_RootTable__stage	microkernel::rootidx::RootTable::stage	BOUNDED	624934
+microkernel	rootidx_RootTable__take_pending	microkernel::rootidx::RootTable::take_pending	BOUNDED	518429
+microkernel	rootidx_RootTable__remove	microkernel::rootidx::RootTable::remove	BOUNDED	518413
+microkernel	rootidx_RootTable__first_born_from	microkernel::rootidx::RootTable::first_born_from	BOUNDED	251986
+microkernel	rootidx_RootTable__born_len	microkernel::rootidx::RootTable::born_len	BOUNDED	426104
+microkernel	retype_tiling_guard	microkernel::objects::Kernel::region_tiled	BOUNDED	535197
